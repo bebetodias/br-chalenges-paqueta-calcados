@@ -1,0 +1,18 @@
+/********** Reset **********/
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+img, picture {
+  max-width: 100%;
+}
+
+/********** Variables **********/
+:root {
+  --clr-text: black;
+  --clr-accent: orange;
+}
