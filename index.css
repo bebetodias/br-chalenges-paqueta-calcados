@@ -10,9 +10,103 @@
 img, picture {
   max-width: 100%;
 }
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
 
 /********** Variables **********/
 :root {
-  --clr-text: black;
-  --clr-accent: orange;
+  --clr-black: hsl(0, 0%, 22%);
+  --clr-white: hsl(0, 0%, 100%);
+  --clr-primary-200: hsl(36, 100%, 49%);
+  --clr-primary-400: hsl(27, 100%, 60%);
+  --clr-primary-600: hsl(27, 100%, 50%);
+  --clr-primary-800: hsl(27, 100%, 40%);
+  --sz-container: 82.75rem;
+}
+
+/********** Main Content **********/
+body {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+}
+.accent-bar {
+  background: linear-gradient(92.46deg, var(--clr-primary-400) 31.2%, var(--clr-primary-800) 71.97%);
+}
+
+.container {
+  width: var(--sz-container);
+  margin: auto;
+}
+
+/*** HEADER ***/
+/* Top bar */
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font: 14px/20px;
+  color: var(--clr-white);
+  height: 53px;
+}
+.topbar ul {
+  display: flex;
+  gap: 60px;
+}
+.topbar li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.topbar i {
+  font-size: 20px;
+}
+
+/* Head - Logo + User Menu */
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+}
+.head ul {
+  display: flex;
+  gap: 40px;
+}
+.head li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 14px;
+  position: relative;
+}
+.head i {
+  font-size: 30px;
+}
+.head i+span {
+  position: absolute;
+  width: 20px;
+  font-size: 12px;
+  line-height: 1.67;
+  text-align: center;
+  border-radius: 50%;
+  color: var(--clr-white);
+  left: 20px;
+  top: -4px;
+  background: linear-gradient(133.49deg, #F99500 21.3%, #FFCD29 133.37%);
+}
+
+/* Nav bar */
+.mainmenu ul {
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+}
+.mainmenu LI {
+  line-height: 25px;
+  padding: 18px;
+  color: var(--clr-black);
 }
